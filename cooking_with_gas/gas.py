@@ -4,10 +4,10 @@ class Gas:
         if not isinstance(deployment_id, str):
             raise TypeError("Deployment ID must be a string")
 
-        self.deployment_id = deployment_id
+        self._deployment_id = deployment_id
 
-    def do_example(self):
-        print("I'm doing an example")
+    def get_deployment_id(self) -> str:
+        return self._deployment_id
 
-    def add_one(self, x):
-        return x + 1
+    def get_url(self) -> str:
+        return f"https://script.google.com/macros/s/{self._deployment_id}/exec"

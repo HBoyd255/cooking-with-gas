@@ -15,6 +15,19 @@ class TestGas(unittest.TestCase):
 
         gas = Gas("DEPLOYMENT_ID")
 
+    def test_get_deployment_id(self):
+
+        gas = Gas("DEPLOYMENT_ID_123")
+        self.assertEqual(gas.get_deployment_id(), "DEPLOYMENT_ID_123")
+
+    def test_get_url(self):
+
+        gas = Gas("DEPLOYMENT_ID_123")
+        self.assertEqual(
+            gas.get_url(),
+            "https://script.google.com/macros/s/DEPLOYMENT_ID_123/exec",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
