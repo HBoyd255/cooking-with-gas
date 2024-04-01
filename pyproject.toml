@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cooking-with-gas"
 version = "0.0.1"
+dependencies = ["requests"]
 authors = [{ name = "Harry Boyd", email = "hboyd255@gmail.com" }]
 description = "A simple package to make it easier to use the Google Apps Script API."
 readme = "README.md"

@@ -1,4 +1,4 @@
 
 .\dev_venv\Scripts\activate
 
-@REM python -m build --wheel
+python -m build --wheel
