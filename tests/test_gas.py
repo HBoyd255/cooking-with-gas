@@ -4,21 +4,16 @@ from cooking_with_gas import Gas
 
 
 class TestGas(unittest.TestCase):
-    def test_add_one(self):
 
-        # Prints the current File
-        print(__file__)
+    def test_constructor(self):
 
-        # Prints the current environment
-        print("The name is", __name__)
+        with self.assertRaises(TypeError):
+            gas = Gas()
 
-        gas = Gas()
+        with self.assertRaises(TypeError):
+            gas = Gas(123)
 
-        result = gas.add_one(1)
-
-        self.assertEqual(result, 2)
-
-        print()
+        gas = Gas("DEPLOYMENT_ID")
 
 
 if __name__ == "__main__":
