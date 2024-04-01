@@ -57,7 +57,7 @@ class Gas:
         """
         return f"https://script.google.com/macros/s/{self._deployment_id}/exec"
 
-    def post(self, params: dict = None, data: dict = None) -> dict:
+    def post(self, data: dict = None, params: dict = None) -> dict:
         """
         Sends a POST request to the Google Apps Script deployment.
 
