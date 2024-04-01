@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cooking-with-gas"
-version = "0.0.2"
+version = "0.0.3"
 dependencies = ["requests"]
 authors = [{ name = "Harry Boyd", email = "hboyd255@gmail.com" }]
 description = "A simple wrapper to make it easier to use the Google Apps Script API."
